@@ -6,6 +6,11 @@
 </head>
 <body>
 	<jsp:include page="/jsp/common/common.jsp" />
+<div class="container body">
+	<header>
+	
+	</header>
+</div>	
 	<jsp:include page="/jsp/common/menuBar.jsp" />
 	<section>
 		<div class="row text-center">
