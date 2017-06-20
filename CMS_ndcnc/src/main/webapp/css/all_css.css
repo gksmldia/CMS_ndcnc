@@ -13,19 +13,19 @@
 }
 
 .lInput {
-	width: 300;
+	width: 300px;
 }
 
 .btn-login {
-	width: 100;
-    height: 70;
+	width: 100px;
+    height: 70px;
 }
 
 .lformFooter {
 	width: 80%;
-	margin-top: 5;
-    margin-left: 90;
-    margin-bottom: 10;
+	margin-top: 5px;
+    margin-left: 90px;
+    margin-bottom: 10px;
 	text-align: center
 	
 }
@@ -35,18 +35,30 @@
 }
 
 .marginTop10 {
-	margin-top: 10;
+	margin-top: 10px;
 }
 
 .marginTop20 {
-	margin-top: 20;
+	margin-top: 20px;
 }
 
 .marginTop30 {
-	margin-top: 30;
+	margin-top: 30px;
 }
 
 .marginAuto {
 	margin: auto;
 }
 
+.eFormDiv {
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+.eLabel {
+	background-color: #E3F2FD;
+	border-radius: 10px;
+	height: 40px;
+	padding-top: 10px;
+}
