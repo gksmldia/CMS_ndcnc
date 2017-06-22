@@ -7,11 +7,14 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import kr.co.ndcnc.bean.DepartmentVO;
+import kr.co.ndcnc.bean.MemberVO;
 import kr.co.ndcnc.service.MemberService;
 
 @Controller
@@ -38,5 +41,16 @@ public class MemberController {
 		return use;
 
 	}
+	
+	@RequestMapping(value="/membership/enroll.do", method=RequestMethod.POST)
+	public String membership(@ModelAttribute("member") MemberVO member, Model model) {
+		
+		System.out.println(member);
+//		service.enroll(member);
+//		model.addAttribute("memberVO", member);
+//		
+		return "abc";
+	}
+
 
 }
