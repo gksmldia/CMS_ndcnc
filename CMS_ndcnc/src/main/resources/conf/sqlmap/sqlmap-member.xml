@@ -3,5 +3,12 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.co.ndcnc.dao.MemberDAO">
+	<select id="selectDepartment" resultType="departmentVO">
+		SELECT * FROM C_DEPARTMENT ORDER BY no
+	</select>
 	
+	<select id="checkId" parameterType="string" resultType="int">
+		SELECT COUNT(id) FROM C_MEMBER 
+		WHERE id=#{id}
+	</select>
 </mapper>  
