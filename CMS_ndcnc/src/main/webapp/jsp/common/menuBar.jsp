@@ -39,7 +39,7 @@
 	<div class="row">
 		<div class="col-md-3 text-center">
 			<a href="${ pageContext.request.contextPath }/index.jsp">
-				<img alt="naedamcncLogo" src="${ pageContext.request.contextPath }/img/NDcnc.png" id="logoimg">
+				<img alt="naedamcncLogo" src="${ pageContext.request.contextPath }/resources/img/NDcnc.png" id="logoimg">
 			</a>
 		</div>
 		<div class="col-md-1"></div>
