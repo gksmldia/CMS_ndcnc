@@ -3,5 +3,6 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="kr.co.ndcnc.bean.MemberVO" alias="memberVO" />
+		<typeAlias type="kr.co.ndcnc.bean.DepartmentVO" alias="departmentVO" />
 	</typeAliases>
 </configuration>

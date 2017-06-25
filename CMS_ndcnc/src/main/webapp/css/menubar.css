@@ -5,15 +5,10 @@
 	margin: auto;
 }
    
-#topHr {
-	width: 100%;
+.topHr {
 	height: 5px;
 	background-color: #2196F3;
 	top: 0px;
-}
-
-.topRow {
-	margin-left: 800;	
 }
 
 .topA {
@@ -28,11 +23,10 @@
 }
 
 .navHr {
-	width: 100%;
-	margin-top: 0;
-	margin-bottom: 0;
-	border-top-width: 0;
-	height: 4;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-top-width: 0px;
+	height: 4px;
 	background-color: gray;
 }
 
