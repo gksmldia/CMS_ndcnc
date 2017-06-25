@@ -1,5 +1,7 @@
 package kr.co.ndcnc.bean;
 
+import org.springframework.util.ObjectUtils;
+
 public class MemberVO {
 
 	private int no;
@@ -9,22 +11,26 @@ public class MemberVO {
 	private int department;
 	private String birth;
 	private String gender;
-	private String email_id;
-	private String email_addr;
+	private String phone;
+	private String emailId;
+	private String emailAddr;
 	private String addr;
 	private String type;
-	private String reg_date;
-	private String last_date;
-	private String last_ip;
-	private String profile_img;
+	private String regDate;
+	private String lastDate;
+	private String lastIp;
+	private String profileImg;
+	private String phone1;
+	private String phone2;
+	private String phone3;
 	
 	public MemberVO() {
 		super();
 	}
 
 	public MemberVO(int no, String id, String password, String name, int department, String birth, String gender,
-			String email_id, String email_addr, String addr, String type, String reg_date, String last_date,
-			String last_ip, String profile_img) {
+			String phone, String emailId, String emailAddr, String addr, String type, String regDate, String lastDate,
+			String lastIp, String profileImg, String phone1, String phone2, String phone3) {
 		super();
 		this.no = no;
 		this.id = id;
@@ -33,15 +39,21 @@ public class MemberVO {
 		this.department = department;
 		this.birth = birth;
 		this.gender = gender;
-		this.email_id = email_id;
-		this.email_addr = email_addr;
+		this.phone = phone;
+		this.emailId = emailId;
+		this.emailAddr = emailAddr;
 		this.addr = addr;
 		this.type = type;
-		this.reg_date = reg_date;
-		this.last_date = last_date;
-		this.last_ip = last_ip;
-		this.profile_img = profile_img;
+		this.regDate = regDate;
+		this.lastDate = lastDate;
+		this.lastIp = lastIp;
+		this.profileImg = profileImg;
+		this.phone1 = phone1;
+		this.phone2 = phone2;
+		this.phone3 = phone3;
 	}
+
+
 
 	public int getNo() {
 		return no;
@@ -99,20 +111,28 @@ public class MemberVO {
 		this.gender = gender;
 	}
 
-	public String getEmail_id() {
-		return email_id;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setEmail_id(String email_id) {
-		this.email_id = email_id;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
-	public String getEmail_addr() {
-		return email_addr;
+	public String getEmailId() {
+		return emailId;
 	}
 
-	public void setEmail_addr(String email_addr) {
-		this.email_addr = email_addr;
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+	public String getEmailAddr() {
+		return emailAddr;
+	}
+
+	public void setEmailAddr(String emailAddr) {
+		this.emailAddr = emailAddr;
 	}
 
 	public String getAddr() {
@@ -131,44 +151,69 @@ public class MemberVO {
 		this.type = type;
 	}
 
-	public String getReg_date() {
-		return reg_date;
+	public String getRegDate() {
+		return regDate;
 	}
 
-	public void setReg_date(String reg_date) {
-		this.reg_date = reg_date;
+	public void setRegDate(String regDate) {
+		this.regDate = regDate;
 	}
 
-	public String getLast_date() {
-		return last_date;
+	public String getLastDate() {
+		return lastDate;
 	}
 
-	public void setLast_date(String last_date) {
-		this.last_date = last_date;
+	public void setLastDate(String lastDate) {
+		this.lastDate = lastDate;
 	}
 
-	public String getLast_ip() {
-		return last_ip;
+	public String getLastIp() {
+		return lastIp;
 	}
 
-	public void setLast_ip(String last_ip) {
-		this.last_ip = last_ip;
+	public void setLastIp(String lastIp) {
+		this.lastIp = lastIp;
 	}
 
-	public String getProfile_img() {
-		return profile_img;
+	public String getProfileImg() {
+		return profileImg;
 	}
 
-	public void setProfile_img(String profile_img) {
-		this.profile_img = profile_img;
+	public void setProfileImg(String profileImg) {
+		this.profileImg = profileImg;
+	}
+
+	public String getPhone1() {
+		return phone1;
+	}
+
+	public void setPhone1(String phone1) {
+		this.phone1 = phone1;
+	}
+
+	public String getPhone2() {
+		return phone2;
+	}
+
+	public void setPhone2(String phone2) {
+		this.phone2 = phone2;
+	}
+
+	public String getPhone3() {
+		return phone3;
+	}
+
+	public void setPhone3(String phone3) {
+		this.phone3 = phone3;
 	}
 
 	@Override
 	public String toString() {
 		return "MemberVO [no=" + no + ", id=" + id + ", password=" + password + ", name=" + name + ", department="
-				+ department + ", birth=" + birth + ", gender=" + gender + ", email_id=" + email_id + ", email_addr="
-				+ email_addr + ", addr=" + addr + ", type=" + type + ", reg_date=" + reg_date + ", last_date="
-				+ last_date + ", last_ip=" + last_ip + ", profile_img=" + profile_img + "]";
+				+ department + ", birth=" + birth + ", gender=" + gender + ", phone=" + phone + ", emailId=" + emailId
+				+ ", emailAddr=" + emailAddr + ", addr=" + addr + ", type=" + type + ", regDate=" + regDate
+				+ ", lastDate=" + lastDate + ", lastIp=" + lastIp + ", profileImg=" + profileImg + ", phone1=" + phone1
+				+ ", phone2=" + phone2 + ", phone3=" + phone3 + "]";
 	}
-	
+
 }

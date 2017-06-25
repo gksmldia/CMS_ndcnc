@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import kr.co.ndcnc.bean.DepartmentVO;
+import kr.co.ndcnc.bean.MemberVO;
 import kr.co.ndcnc.dao.MemberDAO;
 
 @Service
@@ -24,6 +25,10 @@ public class MemberService {
 		int use = dao.checkId(id);
 		
 		return use;
+	}
+	
+	public void enrollMember(MemberVO member) {
+		dao.enrollMember(member);
 	}
 
 }

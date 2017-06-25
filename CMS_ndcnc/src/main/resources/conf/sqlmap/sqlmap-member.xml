@@ -11,4 +11,30 @@
 		SELECT COUNT(id) FROM C_MEMBER 
 		WHERE id=#{id}
 	</select>
+	
+	<insert id="enrollMember" parameterType="memberVO">
+		INSERT INTO C_MEMBER (
+		NO
+		, ID
+		, PASSWORD
+		, NAME
+		, DEPARTMENT
+		, BIRTH
+		, GENDER
+		, PHONE
+		, EMAIL_ID
+		, EMAIL_ADDR) 
+		values (
+		C_MEMBER_NO.nextval
+		, #{id}
+		, #{password}
+		, #{name}
+		, #{department}
+		, #{birth}
+		, #{gender}
+		, #{phone}
+		, #{emailId}
+		, #{emailAddr}
+		)
+	</insert>
 </mapper>  

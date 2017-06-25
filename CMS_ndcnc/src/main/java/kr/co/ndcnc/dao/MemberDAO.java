@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import kr.co.ndcnc.bean.DepartmentVO;
+import kr.co.ndcnc.bean.MemberVO;
 
 @Repository
 public class MemberDAO {
@@ -24,6 +25,10 @@ public class MemberDAO {
 		int use = sqlSessionTemplate.selectOne("kr.co.ndcnc.dao.MemberDAO.checkId", id);
 
 		return use;
+	}
+	
+	public void enrollMember(MemberVO member) {
+		sqlSessionTemplate.insert("kr.co.ndcnc.dao.MemberDAO.enrollMember", member);
 	}
 
 
